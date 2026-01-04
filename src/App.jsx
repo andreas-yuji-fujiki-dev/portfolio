@@ -41,7 +41,7 @@ const App = () => {
         secondTitleType="highlited"
         secondTitleContent={
           <>
-            17 years old <Span content="Frontend React" /> developer!
+            <Span content="Fullstack Engineer!" />
           </>
         }
 
@@ -50,22 +50,22 @@ const App = () => {
             <div className='social-links-container'>
                 <List type="unordened" direction="horizontal">
                   <li>
-                    < ButtonLink  
+                    <ButtonLink  
                       type='iconPrimary'
                       link='https://www.linkedin.com/in/andreas-yuji-fujiki-a08633321/'
                       target='_blank'
                       content={
-                        < FaLinkedin />
+                        <FaLinkedin />
                       }
                     />
                   </li>
                   <li>
-                    < ButtonLink  
+                    <ButtonLink  
                         type='iconPrimary'
                         link='https://github.com/andreas-yuji-fujiki'
                         target='_blank'
                         content={
-                          < FaGithub />
+                          <FaGithub />
                         }
                       />
                   </li>
@@ -74,12 +74,10 @@ const App = () => {
                       <Button
                           type='iconPrimary'
                           content={
-                            <>
-                                <div className="tooltip">
-                                  <FaFileDownload/>
-                                  <span className="tooltip-text">download resume</span>
-                                </div>
-                            </>
+                            <div className="tooltip">
+                              <FaFileDownload/>
+                              <span className="tooltip-text">download resume</span>
+                            </div>
                           }
                         />
                     </a>
